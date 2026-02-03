@@ -1,0 +1,372 @@
+local Translations = {
+    -- 基础词条
+    ["Updates"] = "不翻译此处",
+    ["Feedback System"] = "这里所有功能都不翻译",
+    -- 核心功能词条
+    ["MainCorefeatures"] = "核心功能主模块",
+    ["uulTivus"] = "提维斯",
+    ["Weapon modifications"] = "武器改装",
+    ["Hitbox Expander"] = "碰撞箱扩展器",
+    ["Enlarge player hitboxes"] = "扩大玩家碰撞箱",
+    ["Enable Hitbox Expander"] = "启用碰撞箱扩展器",
+    ["Enable Gun Mod"] = "启用枪械改装",
+    ["Team Check"] = "队伍检测",
+    ["Auto Reload"] = "自动换弹",
+    ["Hitbox Size"] = "碰撞箱尺寸",
+    ["AutoFire"] = "自动开火",
+    ["Hitbox Transparency"] = "碰撞箱透明度",
+    ["Fast Fire Rate"] = "高速射速",
+    ["Hitbox Shape"] = "碰撞箱形状",
+    ["No Spread"] = "无弹道散布",
+    ["Ball"] = "球形",
+    ["Custom Values"] = "自定义数值",
+    -- 静默瞄准功能
+    ["Silent Aim"] = "静默瞄准",
+    ["Enabled"] = "启用",
+    ["Visible Check"] = "可见性检测",
+    ["ForceField Check"] = "力场检测",
+    ["Auto Shoot"] = "自动射击",
+    ["Target Teams"] = "目标队伍",
+    ["Settings"] = "设置",
+    ["Select Players to Ignore"] = "选择忽略的玩家",
+    ["Focus Targets"] = "焦点目标",
+    ["Refresh Player Lists"] = "刷新玩家列表",
+    -- 碰撞箱相关功能
+    ["Hitbox Texture"] = "碰撞箱纹理",
+    ["ForceField"] = "力场",
+    ["Enable Kill Sound"] = "启用击杀音效",
+    ["Kill Sound"] = "击杀音效",
+    ["Rust"] = "《腐蚀》风格",
+    ["Volume"] = "音量",
+    ["Enable Kill Effect"] = "启用击杀特效",
+    ["Kill Effect"] = "击杀特效",
+    ["Lightning Explosion"] = "闪电爆炸",
+    ["Show FOV Circle"] = "显示透视碰撞箱",
+    ["FOV Circle Radius"] = "显示碰撞箱边框",
+    ["Combat Features"] = "战斗区功能",
+    ["Kill Aura"] = "杀戮光环",
+    -- 音效相关功能
+    ["Sound Type"] = "音效类型",
+    ["Bubble"] = "气泡音效",
+    ["Pick"] = "拾取音效",
+    ["Skeet"] = "速射音效",
+    ["Neverlose"] = "永不失手风格",
+    ["Fatality"] = "终结音效",
+    ["Bonk"] = "撞击音效",
+    ["Minecraft"] = "《我的世界》风格",
+    ["Bameware"] = "Bameware风格",
+    ["Bell"] = "铃铛音效",
+    ["Cod"] = "《使命召唤》风格",
+    ["Pop"] = "弹出音效",
+    ["Sans"] = "Sans风格",
+    ["Enable Gun Sound Changer"] = "启用枪械音效切换",
+    ["Shoot Sound Type"] = "射击音效类型",
+    ["Laser"] = "激光音效",
+    ["Ray Gun"] = "射线枪音效",
+    ["Revolver"] = "左轮手枪音效",
+    ["Dart Gun"] = "飞镖枪音效",
+    ["Big"] = "大型音效",
+    ["Vine"] = "藤蔓音效",
+    ["Bruh"] = "Bruh风格音效",
+    -- 特效相关功能
+    ["Normal"] = "普通特效",
+    ["Time Explosion"] = "时间爆炸特效",
+    ["Fire Explosion"] = "火焰爆炸特效",
+    -- 命中反馈相关
+    ["Enable Hit Sound"] = "启用命中音效",
+    ["Enable Hitmarker"] = "启用命中标记",
+    ["Size"] = "尺寸",
+    ["Duration"] = "持续时间",
+    ["Fade Style"] = "淡入淡出风格",
+    ["Smooth"] = "平滑过渡",
+    ["Instant"] = "立即生效",
+    ["Custom Image ID"] = "自定义图片ID",
+    ["Enter Asset ID"] = "输入资源ID",
+    ["Reset to Default Image"] = "重置为默认图片",
+    -- 枪械改装相关
+    ["Enable Color Changer"] = "启用颜色切换",
+    ["Material"] = "材质",
+    ["Plastic"] = "塑料材质",
+    ["Metal"] = "金属材质",
+    ["DiamondPlate"] = "钻石板材质",
+    ["Marble"] = "大理石材质",
+    ["Granite"] = "花岗岩材质",
+    ["Bullet Tracer"] = "子弹轨迹",
+    ["Tracer Texture"] = "轨迹纹理",
+    ["Default"] = "默认",
+    ["Texture 1"] = "纹理1",
+    ["Texture 2"] = "纹理2",
+    ["Texture 3"] = "纹理3",
+    ["Texture 4"] = "纹理4",
+    ["Texture 5"] = "纹理5",
+    ["Transparency"] = "透明度",
+    -- 目标与战斗参数
+    ["Target Part"] = "目标部位",
+    ["HumanoidRootPart"] = "人形根部件",
+    ["Random"] = "随机",
+    ["Left Arm"] = "左臂",
+    ["Left Leg"] = "左腿",
+    ["Right Arm"] = "右臂",
+    ["Right Leg"] = "右腿",
+    ["Target Mode"] = "目标模式",
+    ["Smart Target (Emoji)"] = "智能目标（表情识别）",
+    ["Hit Chance"] = "命中概率",
+    ["Miss Spread"] = "空枪散布",
+    ["Max Distance"] = "最大距离",
+    ["Criminals"] = "罪犯",
+    ["Inmates"] = "囚犯",
+    ["Guards"] = "守卫",
+    ["Arrest Aura"] = "警察逮捕光环",
+    ["Auto Key Card"] = "自动获得钥匙卡",
+    ["Anti-Tase"] = "防电击",
+    ["Gun Mods"] = "枪械改装",
+    ["Key Card"] = "钥匙卡",
+    ["Main"] = "酷小孩汉化监狱人生",
+    ["Core features"] = "核心内容",
+    ["Manual"] = "手动模式",
+    ["Head"] = "头部",
+    ["Fire Rate"] = "射速",
+    ["Spread Radius"] = "散布半径",
+    -- 工具提示
+    ["Selenium Hub"] = "Selenium 枢纽",
+    ["Script is already running!"] = "脚本已在运行中！",
+    -- 武器与传送模块
+    ["Weapons & Shop"] = "武器与商店",
+    ["Select Weapons"] = "选择武器",
+    ["Get Weapons"] = "获取武器",
+    ["Auto Get Weapons"] = "自动获取武器",
+    ["Teleportation"] = "传送功能",
+    ["Teleport & waypoints"] = "传送与航点",
+    ["Map Locations"] = "地图位置",
+    ["Cafeteria"] = "食堂",
+    ["Yard"] = "庭院",
+    ["Entrance"] = "入口",
+    ["Secret Room"] = "密室",
+    ["Inside Prison"] = "监狱内部",
+    ["Guardtower"] = "瞭望塔",
+    ["Guardtower 2"] = "瞭望塔2",
+    ["Police Room"] = "警察室",
+    ["Police Room 2"] = "警察室2",
+    ["罪犯 Spawn"] = "罪犯出生点",
+    ["Select Player"] = "选择玩家",
+    ["Refresh Player List"] = "刷新玩家列表",
+    ["Teleport to Player"] = "传送到玩家",
+    ["Waypoint Name"] = "航点名称",
+    ["Enter waypoint name"] = "输入航点名称",
+    ["Save Current Position"] = "保存当前位置",
+    ["Select Waypoint"] = "选择航点",
+    ["Teleport to Waypoint"] = "传送到航点",
+    ["Delete Waypoint"] = "删除航点",
+    ["Waypoints saved in workspace"] = "航点已保存到工作区",
+    -- 载具系统模块
+    ["Vehicle System"] = "载具系统",
+    ["Vehicle modifications"] = "载具改装",
+    ["Enable Vehicle Fly"] = "启用载具飞行",
+    ["Height (Y)"] = "高度（Y轴）",
+    ["Flip Vehicle"] = "翻转载具",
+    ["Sit in vehicle to activate"] = "坐在载具内以激活",
+    ["Vehicle Speed Boost"] = "载具速度提升",
+    ["Max Speed"] = "最大速度",
+    ["Select Vehicle"] = "选择载具",
+    ["Sedan"] = "轿车",
+    ["Squad"] = "小队载具",
+    ["Sedan 2"] = "轿车2",
+    ["Teleport"] = "传送载具",
+    ["Bring [ Beta ]"] = "召唤载具 [测试版]",
+    ["Refresh"] = "刷新载具列表",
+    -- 杂项功能模块
+    ["Misc"] = "杂项功能",
+    ["Invisibility"] = "隐身",
+    ["Noclip"] = "穿墙模式",
+    ["Infinite Jump"] = "无限跳跃",
+    ["WalkSpeed"] = "移动速度",
+    ["Spinbot"] = "自动旋转",
+    ["Direction"] = "旋转方向",
+    ["Clockwise"] = "顺时针",
+    ["WalkSpeed Value"] = "移动速度数值",
+    ["Spin Speed"] = "旋转速度",
+    -- 环境设置模块
+    ["Environment"] = "环境设置",
+    ["World appearance settings"] = "世界外观设置",
+    ["World Gradient"] = "世界渐变",
+    ["Gradient Color"] = "渐变色",
+    ["Outdoor Gradient"] = "室外渐变",
+    ["Time Changer"] = "时间修改器",
+    ["Time of Day"] = "一天中的时间",
+    ["Skybox Changer"] = "天空盒修改器",
+    ["Skybox Style"] = "天空盒风格",
+    ["Purple Nebula"] = "紫色星云",
+    ["Fog"] = "雾气",
+    ["No Fog"] = "无雾气",
+    -- 视觉与UI设置模块
+    ["Visuals"] = "视觉设置",
+    ["ESP & visuals"] = "ESP与视觉效果",
+    ["ESP Main"] = "ESP主设置",
+    ["Enable ESP"] = "启用ESP",
+    ["ESP 最大距离"] = "ESP最大距离",
+    ["Clear All ESP"] = "清除所有ESP",
+    ["Target Highlight Color"] = "目标高亮颜色",
+    ["Chams ESP"] = "材质ESP",
+    ["Enable Chams"] = "启用材质ESP",
+    ["Use Team Colors"] = "使用队伍颜色",
+    ["Chams 透明度"] = "材质透明度",
+    ["Chams Color"] = "材质颜色",
+    ["Outline Color"] = "轮廓颜色",
+    ["Outline 透明度"] = "轮廓透明度",
+    ["UI 设置"] = "UI设置",
+    ["UI & options"] = "UI与选项",
+    ["Font color"] = "字体颜色",
+    ["Font Face"] = "字体样式",
+    ["Fantasy"] = "奇幻字体",
+    ["Gotham"] = "Gotham字体",
+    ["Jura"] = "Jura字体",
+    ["Roboto"] = "Roboto字体",
+    ["RobotoMono"] = "RobotoMono字体",
+    ["SourceSans风格"] = "SourceSans风格",
+    ["Theme list"] = "主题列表",
+    ["Bbot"] = "Bbot主题",
+    ["Jester"] = "Jester主题",
+    ["Mint"] = "薄荷主题",
+    ["Tokyo Night"] = "东京之夜主题",
+    ["Ubuntu"] = "Ubuntu主题",
+    ["Quartz"] = "石英主题",
+    ["Monokai"] = "Monokai主题",
+    ["Gruvbox"] = "Gruvbox主题",
+    ["Solarized"] = "Solarized主题",
+    ["Cappuccin"] = "卡布奇诺主题",
+    ["One Dark"] = "One Dark主题",
+    ["Cyberpunk"] = "赛博朋克主题",
+    ["Oceanic Next"] = "Oceanic Next主题",
+    ["Menu"] = "菜单设置",
+    ["Interface configuration"] = "界面配置",
+    ["Open Keybind Menu"] = "打开按键绑定菜单",
+    ["Custom Cursor"] = "自定义光标",
+    ["Notification Side"] = "通知位置",
+    ["Right"] = "右侧",
+    ["Menu bind"] = "菜单按键",
+    ["RightShift"] = "右Shift键",
+    ["Unload"] = "卸载脚本",
+    ["Themes"] = "主题设置",
+    ["Background color"] = "背景颜色",
+    ["Main color"] = "主颜色",
+    ["Accent color"] = "强调色",
+    ["Custom themes"] = "自定义主题",
+    ["Load theme"] = "加载主题",
+    ["Overwrite theme"] = "覆盖主题",
+    ["Delete theme"] = "删除主题",
+    ["Set as default"] = "设为默认",
+    ["Reset default"] = "重置默认",
+    -- 配置管理模块
+    ["Configuration"] = "配置管理",
+    ["Config name"] = "配置名称",
+    ["Create config"] = "创建配置",
+    ["Config list"] = "配置列表",
+    ["Load config"] = "加载配置",
+    ["Overwrite config"] = "覆盖配置",
+    ["Delete config"] = "删除配置",
+    ["Refresh list"] = "刷新列表",
+    ["Set as autoload"] = "设为自动加载",
+    ["Reset autoload"] = "重置自动加载",
+    ["Current autoload config: none"] = "当前自动加载配置：无"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    if Translations[text] then return Translations[text] end
+    for en, cn in pairs(Translations) do
+        if text:find(en) then return text:gsub(en, cn) end
+    end
+    return text
+end
+
+local translatedElements = {}
+local originalTexts = {}
+
+local function safeTranslateElement(element)
+    if translatedElements[element] then return end
+    
+    pcall(function()
+        if element:IsA("TextLabel") or element:IsA("TextButton") or element:IsA("TextBox") then
+            local currentText = element.Text
+            if currentText and currentText ~= "" then
+                if not originalTexts[element] then
+                    originalTexts[element] = currentText
+                end
+                
+                local translatedText = translateText(currentText)
+                if translatedText ~= currentText then
+                    element.Text = translatedText
+                    translatedElements[element] = true
+                end
+            end
+        end
+    end)
+end
+
+local function setupSmartListener()
+    local function onTextPropertyChanged(element)
+        if translatedElements[element] then
+            local currentText = element.Text
+            local originalText = originalTexts[element]
+            
+            if currentText == originalText or translateText(currentText) == currentText then
+                translatedElements[element] = nil
+                return
+            end
+            
+            local translatedText = translateText(currentText)
+            if translatedText ~= currentText then
+                element.Text = translatedText
+            end
+        else
+            safeTranslateElement(element)
+        end
+    end
+
+    local function addSmartListener(parent)
+        parent.DescendantAdded:Connect(function(descendant)
+            task.wait(0.3)  -- 新元素翻译延迟（改小可加快响应）
+            safeTranslateElement(descendant)
+            
+            if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                descendant:GetPropertyChangedSignal("Text"):Connect(function()
+                    task.wait(0.1)  -- 文本变化翻译延迟（改小可加快响应）
+                    onTextPropertyChanged(descendant)
+                end)
+            end
+        end)
+    end
+    
+    pcall(addSmartListener, game:GetService("CoreGui"))
+    local player = game:GetService("Players").LocalPlayer
+    if player and player:FindFirstChild("PlayerGui") then
+        pcall(addSmartListener, player.PlayerGui)
+    end
+end
+
+local function delayedInitialTranslate()
+    task.wait(5)
+    
+    for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+        safeTranslateElement(gui)
+    end
+    
+    local player = game:GetService("Players").LocalPlayer
+    if player and player:FindFirstChild("PlayerGui") then
+        for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+            safeTranslateElement(gui)
+        end
+    end
+end
+
+task.wait(2)
+setupSmartListener()
+delayedInitialTranslate()
+
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zenss555a/script/refs/heads/main/Prison-Life.lua", true))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
